@@ -3,7 +3,6 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use PostHog\PostHog;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -18,10 +17,5 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
-    {
-        PostHog::init(config('posthog.key'), [
-            'host' => config('posthog.host'),
-        ]);
-    }
+    public function boot(): void {}
 }
