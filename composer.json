@@ -12,10 +12,8 @@
         "php": "^8.2",
         "inertiajs/inertia-laravel": "^2.0",
         "laravel/framework": "^12.0",
-        "laravel/pennant": "^1.17",
         "laravel/tinker": "^2.10.1",
-        "posthog/posthog-php": "^3.6",
-        "qodenl/laravel-posthog": "^1.2"
+        "posthog/posthog-php": "^3.6"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
