@@ -1,8 +1,18 @@
-import SplitHeader from '@/Components/SplitHeader.tsx'
-import HeaderImageTiles from "@/Components/HeaderImageTiles.tsx"
+import {lazy, useEffect} from "react";
 
-export default function Home() {
+const FeatureFlagComponents = {
+    SplitHeader: lazy(() => import('@/Components/SplitHeader')),
+    HeaderImageTiles: lazy(() => import('@/Components/HeaderImageTiles')),
+} as const
+
+type HomeProps = {
+    headerFlag: keyof typeof FeatureFlagComponents
+}
+
+export default function Home({ headerFlag }: HomeProps) {
+    const Header = FeatureFlagComponents[headerFlag]
+
     return (
-        <HeaderImageTiles />
+        <Header />
     )
 }

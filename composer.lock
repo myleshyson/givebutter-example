@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74f554bee4121a7b34bcaf5c5f4f9992",
+    "content-hash": "9bd5419668ceb6c84ca6665b47516342",
     "packages": [
         {
             "name": "brick/math",
@@ -3271,6 +3271,78 @@
                 "source": "https://github.com/bobthecow/psysh/tree/v0.12.9"
             },
             "time": "2025-06-23T02:35:06+00:00"
+        },
+        {
+            "name": "qodenl/laravel-posthog",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/QodeNL/Laravel-Posthog.git",
+                "reference": "49cbccb80e8aa92355b66d8593e2fd62c1d6aa3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/QodeNL/Laravel-Posthog/zipball/49cbccb80e8aa92355b66d8593e2fd62c1d6aa3c",
+                "reference": "49cbccb80e8aa92355b66d8593e2fd62c1d6aa3c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+                "laravel/pennant": "^1.12",
+                "php": "^8.0",
+                "posthog/posthog-php": "^3.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.9",
+                "laravel/pint": "^1.14",
+                "nunomaduro/collision": "^8.1.1||^7.10.0",
+                "orchestra/testbench": "^9.0.0||^8.22.0",
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan-deprecation-rules": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.3",
+                "roave/security-advisories": "dev-latest"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Posthog": "QodeNL\\LaravelPosthog\\Facades\\Posthog"
+                    },
+                    "providers": [
+                        "QodeNL\\LaravelPosthog\\PosthogServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "QodeNL\\LaravelPosthog\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schoenmakers",
+                    "email": "info@qode.io"
+                }
+            ],
+            "description": "Laravel implementation for Posthog",
+            "keywords": [
+                "A-B testing",
+                "analytics",
+                "events",
+                "feature flags",
+                "laravel",
+                "posthog",
+                "product analytics"
+            ],
+            "support": {
+                "issues": "https://github.com/QodeNL/Laravel-Posthog/issues",
+                "source": "https://github.com/QodeNL/Laravel-Posthog/tree/1.2.3"
+            },
+            "time": "2025-03-04T14:51:45+00:00"
         },
         {
             "name": "ralouphie/getallheaders",

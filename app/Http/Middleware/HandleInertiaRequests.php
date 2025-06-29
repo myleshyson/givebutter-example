@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Inertia\Middleware;
+use QodeNL\LaravelPosthog\Facades\Posthog;
 
 class HandleInertiaRequests extends Middleware
 {
@@ -35,9 +36,14 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
+        $flags = Posthog::getAllFlags();
         return [
             ...parent::share($request),
-            //
+            'posthog' => [
+                'key' => config('posthog.key'),
+                'host' => config('posthog.host'),
+                'activeFeatureFlags' => empty($flags) ? null : $flags,
+            ]
         ];
     }
 }

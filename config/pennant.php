@@ -34,6 +34,10 @@ return [
             'driver' => 'array',
         ],
 
+        'posthog' => [
+            'driver' => 'posthog',
+        ],
+
         'database' => [
             'driver' => 'database',
             'connection' => null,

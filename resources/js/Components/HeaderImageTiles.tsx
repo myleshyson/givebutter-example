@@ -1,6 +1,13 @@
+import tile1 from '@img/tile_1.webp'
+import tile2 from '@img/tile_2.webp'
+import tile3 from '@img/tile_3.webp'
+import tile4 from '@img/tile_4.webp'
+import tile5 from '@img/tile_5.webp'
+
 export default function HeaderImageTiles() {
+
     return (
-        <div className="bg-white">
+        <div className="bg-sand">
             <main>
                 <div className="relative isolate">
                     <svg
@@ -19,7 +26,7 @@ export default function HeaderImageTiles() {
                                 <path d="M.5 200V.5H200" fill="none" />
                             </pattern>
                         </defs>
-                        <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+                        <svg x="50%" y={-1} className="overflow-visible fill-overlay">
                             <path
                                 d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
                                 strokeWidth={0}
@@ -43,22 +50,25 @@ export default function HeaderImageTiles() {
                         <div className="mx-auto max-w-7xl px-6 pt-36 pb-32 sm:pt-60 lg:px-8 lg:pt-32">
                             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                                 <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
-                                    <h1 className="text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-7xl">
-                                        We’re changing the way people connect
+                                    <h1 className="text-5xl font-semibold tracking-tight text-pretty text-pine sm:text-7xl">
+                                        Help us break the cycle of violence.
                                     </h1>
-                                    <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                                        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                                        amet fugiat veniam occaecat fugiat aliqua. Anim aute id magna aliqua ad ad non deserunt sunt.
+                                    <p className="mt-8 text-lg font-medium text-pretty text-base sm:max-w-md sm:text-xl/8 lg:max-w-none">
+                                        Every survivor deserves a safe place to heal and rebuild. Your Safe Place Foundation provides life-changing services to survivors of domestic violence, sexual assault, and trafficking—from emergency housing and legal support to therapy and basic necessities. When you donate, 100% goes directly to survivors because our board covers all overhead costs. Together, we're not just changing lives—we're saving them.
                                     </p>
                                     <div className="mt-10 flex items-center gap-x-6">
                                         <a
-                                            href="#"
-                                            className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            id="hero_btn"
+                                            data-ph-capture-attribute-id="hero_btn"
+                                            href="https://www.yspfoundation.org/donate"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="rounded-md bg-love-800 px-3.5 py-2.5 text-md font-semibold text-white shadow-xs hover:bg-love-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-love-900"
                                         >
-                                            Get started
+                                            Donate Now
                                         </a>
-                                        <a href="#" className="text-sm/6 font-semibold text-gray-900">
-                                            Live demo <span aria-hidden="true">→</span>
+                                        <a href="https://www.yspfoundation.org/about" rel="noreferrer nofollow" target="_blank" className="text-sm/6 font-semibold text-base hover:underline">
+                                            Learn Our Impact <span aria-hidden="true">→</span>
                                         </a>
                                     </div>
                                 </div>
@@ -66,8 +76,8 @@ export default function HeaderImageTiles() {
                                     <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-0 xl:pt-80">
                                         <div className="relative">
                                             <img
-                                                alt=""
-                                                src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                                                alt="a mother looking lovingly at her child."
+                                                src={tile1}
                                                 className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                                             />
                                             <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
@@ -76,16 +86,16 @@ export default function HeaderImageTiles() {
                                     <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                                         <div className="relative">
                                             <img
-                                                alt=""
-                                                src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                                                alt="a mother looking playfully at her child."
+                                                src={tile2}
                                                 className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                                             />
                                             <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
                                         </div>
                                         <div className="relative">
                                             <img
-                                                alt=""
-                                                src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
+                                                alt="two women looking foward"
+                                                src={tile3}
                                                 className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                                             />
                                             <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
@@ -94,16 +104,16 @@ export default function HeaderImageTiles() {
                                     <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                                         <div className="relative">
                                             <img
-                                                alt=""
-                                                src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
+                                                alt="a woman sitting on bleachers looking hopeful towards the sky"
+                                                src={tile4}
                                                 className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                                             />
                                             <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
                                         </div>
                                         <div className="relative">
                                             <img
-                                                alt=""
-                                                src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                                                alt="a woman holder her baby"
+                                                src={tile5}
                                                 className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                                             />
                                             <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />

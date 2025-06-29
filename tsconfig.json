@@ -17,9 +17,11 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["resources/js/*"]
+      "@/*": ["./resources/js/*"],
+      "@css/*": ["./resources/css/*"],
+      "@img/*": ["./resources/img/*"]
     },
     "esModuleInterop": true
   },
-  "include": ["resources/js/**/*.ts", "resources/js/**/*.tsx", "resources/js/**/*.jsx", "resources/js/**/*.js"]
+  "include": ["./resources/js/**/*.ts", "./resources/js/**/*.tsx", "./resources/js/**/*.jsx", "./resources/js/**/*.js"]
 }
