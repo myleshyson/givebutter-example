@@ -1,9 +1,7 @@
 import {defineConfig} from 'vite';
 import laravel from 'laravel-vite-plugin';
 import tailwindcss from '@tailwindcss/vite';
-// Need to install: npm install @vitejs/plugin-react --save-dev
 import react from '@vitejs/plugin-react';
-import {ViteImageOptimizer} from "vite-plugin-image-optimizer";
 import path from "node:path";
 
 export default defineConfig({

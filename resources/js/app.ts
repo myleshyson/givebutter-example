@@ -1,2 +1,1 @@
-import './bootstrap.tsx';
-
+import "./bootstrap.tsx";

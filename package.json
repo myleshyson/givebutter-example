@@ -4,7 +4,9 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "format": "prettier ./resources/js --write",
+        "lint": "oxlint"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",

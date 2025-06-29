@@ -1,11 +1,10 @@
-import tile1 from '@img/tile_1.webp'
-import tile2 from '@img/tile_2.webp'
-import tile3 from '@img/tile_3.webp'
-import tile4 from '@img/tile_4.webp'
-import tile5 from '@img/tile_5.webp'
+import tile1 from "@img/tile_1.webp";
+import tile2 from "@img/tile_2.webp";
+import tile3 from "@img/tile_3.webp";
+import tile4 from "@img/tile_4.webp";
+import tile5 from "@img/tile_5.webp";
 
 export default function HeaderImageTiles() {
-
     return (
         <div className="bg-sand">
             <main>
@@ -26,13 +25,22 @@ export default function HeaderImageTiles() {
                                 <path d="M.5 200V.5H200" fill="none" />
                             </pattern>
                         </defs>
-                        <svg x="50%" y={-1} className="overflow-visible fill-overlay">
+                        <svg
+                            x="50%"
+                            y={-1}
+                            className="overflow-visible fill-overlay"
+                        >
                             <path
                                 d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
                                 strokeWidth={0}
                             />
                         </svg>
-                        <rect fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" width="100%" height="100%" strokeWidth={0} />
+                        <rect
+                            fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
+                            width="100%"
+                            height="100%"
+                            strokeWidth={0}
+                        />
                     </svg>
                     <div
                         aria-hidden="true"
@@ -41,7 +49,7 @@ export default function HeaderImageTiles() {
                         <div
                             style={{
                                 clipPath:
-                                    'polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)',
+                                    "polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)",
                             }}
                             className="aspect-801/1036 w-200.25 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
                         />
@@ -54,7 +62,18 @@ export default function HeaderImageTiles() {
                                         Help us break the cycle of violence.
                                     </h1>
                                     <p className="mt-8 text-lg font-medium text-pretty text-base sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                                        Every survivor deserves a safe place to heal and rebuild. Your Safe Place Foundation provides life-changing services to survivors of domestic violence, sexual assault, and trafficking—from emergency housing and legal support to therapy and basic necessities. When you donate, 100% goes directly to survivors because our board covers all overhead costs. Together, we're not just changing lives—we're saving them.
+                                        Every survivor deserves a safe place to
+                                        heal and rebuild. Your Safe Place
+                                        Foundation provides life-changing
+                                        services to survivors of domestic
+                                        violence, sexual assault, and
+                                        trafficking—from emergency housing and
+                                        legal support to therapy and basic
+                                        necessities. When you donate, 100% goes
+                                        directly to survivors because our board
+                                        covers all overhead costs. Together,
+                                        we're not just changing lives—we're
+                                        saving them.
                                     </p>
                                     <div className="mt-10 flex items-center gap-x-6">
                                         <a
@@ -67,8 +86,14 @@ export default function HeaderImageTiles() {
                                         >
                                             Donate Now
                                         </a>
-                                        <a href="https://www.yspfoundation.org/about" rel="noreferrer nofollow" target="_blank" className="text-sm/6 font-semibold text-base hover:underline">
-                                            Learn Our Impact <span aria-hidden="true">→</span>
+                                        <a
+                                            href="https://www.yspfoundation.org/about"
+                                            rel="noreferrer nofollow"
+                                            target="_blank"
+                                            className="text-sm/6 font-semibold text-base hover:underline"
+                                        >
+                                            Learn Our Impact{" "}
+                                            <span aria-hidden="true">→</span>
                                         </a>
                                     </div>
                                 </div>
@@ -126,5 +151,5 @@ export default function HeaderImageTiles() {
                 </div>
             </main>
         </div>
-    )
+    );
 }

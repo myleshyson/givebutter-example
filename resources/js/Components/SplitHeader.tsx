@@ -1,4 +1,4 @@
-import splitHero from '@img/split_hero.webp'
+import splitHero from "@img/split_hero.webp";
 
 export default function SplitHeader() {
     return (
@@ -10,7 +10,15 @@ export default function SplitHeader() {
                             Help us break the cycle of violence.
                         </h1>
                         <p className="mt-8 text-lg font-medium text-pretty text-base sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                            Every survivor deserves a safe place to heal and rebuild. Your Safe Place Foundation provides life-changing services to survivors of domestic violence, sexual assault, and trafficking—from emergency housing and legal support to therapy and basic necessities. When you donate, 100% goes directly to survivors because our board covers all overhead costs. Together, we're not just changing lives—we're saving them.
+                            Every survivor deserves a safe place to heal and
+                            rebuild. Your Safe Place Foundation provides
+                            life-changing services to survivors of domestic
+                            violence, sexual assault, and trafficking—from
+                            emergency housing and legal support to therapy and
+                            basic necessities. When you donate, 100% goes
+                            directly to survivors because our board covers all
+                            overhead costs. Together, we're not just changing
+                            lives—we're saving them.
                         </p>
                         <div className="mt-10 flex items-center gap-x-6">
                             <a
@@ -23,8 +31,14 @@ export default function SplitHeader() {
                             >
                                 Donate Now
                             </a>
-                            <a href="https://www.yspfoundation.org/about" rel="noreferrer nofollow" target="_blank" className="text-sm/6 font-semibold text-base hover:underline">
-                                Learn Our Impact <span aria-hidden="true">→</span>
+                            <a
+                                href="https://www.yspfoundation.org/about"
+                                rel="noreferrer nofollow"
+                                target="_blank"
+                                className="text-sm/6 font-semibold text-base hover:underline"
+                            >
+                                Learn Our Impact{" "}
+                                <span aria-hidden="true">→</span>
                             </a>
                         </div>
                     </div>
@@ -38,5 +52,5 @@ export default function SplitHeader() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
