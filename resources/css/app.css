@@ -25,4 +25,7 @@
     --color-love-800: #7b3949;
     --color-love-900: #68333f;
     --color-love-950: #3d1a22;
+
+    --color-gold: hsl(35deg, 81%, 56%);
+    --color-surface: hsl(35deg, 100%, 98%);
 }

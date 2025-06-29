@@ -1,6 +1,7 @@
-import { JSX, lazy, useEffect, useState } from "react";
+import { Fragment, JSX, lazy, useEffect, useState } from "react";
 import posthog from "posthog-js";
 import React from "react";
+import Stats from "@/Components/Stats";
 
 const FeatureFlagComponents = {
     SplitHeader: lazy(() => import("@/Components/SplitHeader")),
@@ -26,5 +27,10 @@ export default function Home() {
         return;
     }
 
-    return <Header />;
+    return (
+        <Fragment>
+            <Header />
+            <Stats />
+        </Fragment>
+    );
 }
