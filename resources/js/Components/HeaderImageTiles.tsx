@@ -78,7 +78,6 @@ export default function HeaderImageTiles() {
                                     <div className="mt-10 flex items-center gap-x-6">
                                         <a
                                             id="hero_btn"
-                                            data-ph-capture-attribute-id="hero_btn"
                                             href="https://www.yspfoundation.org/donate"
                                             target="_blank"
                                             rel="noopener noreferrer"
