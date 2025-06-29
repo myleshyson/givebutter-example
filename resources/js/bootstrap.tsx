@@ -15,23 +15,10 @@ createInertiaApp({
     setup({ el, App, props }) {
         const key = props.initialPage.props.posthog?.key;
         const host = props.initialPage.props.posthog?.host;
-        const flags = props.initialPage.props.posthog?.activeFeatureFlags || {};
+        // const flags = props.initialPage.props.posthog?.activeFeatureFlags || {};
 
         posthog.init(key, {
             api_host: host,
-            before_send: (payload) => {
-                const activeFlags = Object.keys(flags);
-
-                payload.properties["$active_feature_flags"] = activeFlags.length
-                    ? activeFlags
-                    : false;
-
-                Object.entries(flags).forEach(([key, value]) => {
-                    payload.properties[`$feature/${key}`] = value || false;
-                });
-
-                return payload;
-            },
         });
 
         window.posthog = posthog;

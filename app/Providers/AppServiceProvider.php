@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use PostHog\PostHog;
 
