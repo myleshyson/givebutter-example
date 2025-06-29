@@ -13,13 +13,10 @@ class HomeController extends Controller
      */
     public function __invoke(Request $request)
     {
-//        return Inertia::render('Home', [
-//            'headerFlag' => Posthog::getFeatureFlag('main_header') === 'HeaderImageTiles'
-//                ? 'HeaderImageTiles'
-//                : 'SplitHeader'
-//        ]);
         return Inertia::render('Home', [
-            'headerFlag' => 'SplitHeader'
+            'headerFlag' => Posthog::getFeatureFlag('main_header') === 'HeaderImageTiles'
+                ? 'HeaderImageTiles'
+                : 'SplitHeader'
         ]);
     }
 }
